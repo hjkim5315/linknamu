@@ -12,14 +12,13 @@ export interface Profile {
 
 // TODO: 더미 데이터입니다. 실제 내용으로 교체하세요.
 export const profile: Profile = {
-  name: "김종로",
-  bio: "세계 최강 바이브 코더",
-  avatar: "/avatar.svg",
+  name: "김현정",
+  bio: "풀스텍 개발자 | 요즘은 ai 개발에 관심이 많음",
+  avatar: "/profile.png",
 };
 
-// TODO: 더미 링크입니다. 실제 주소로 교체하세요.
 export const links: LinkItem[] = [
-  { id: "github", title: "GitHub", url: "https://github.com/example" },
-  { id: "linkedin", title: "LinkedIn", url: "https://www.linkedin.com/in/example" },
-  { id: "blog", title: "Blog", url: "https://example.com/blog" },
+  { id: "github", title: "🐙 깃허브", url: "https://github.com/hjkim5315" },
+  { id: "blog", title: "📝 블로그", url: "https://blog.naver.com/hjkim_9204" },
+  { id: "email", title: "📧 이메일", url: "mailto:hjkim5315@gmail.com" },
 ];

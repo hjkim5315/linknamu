@@ -10,12 +10,11 @@ export default async function Home() {
   const counts = await getClickCounts();
 
   return (
-    <main className="relative flex min-h-screen items-center justify-center px-4 py-10">
+    <main className="relative flex min-h-screen items-center justify-center px-8 py-20 sm:px-6">
       <ThemeToggle />
-      {/* 와이어프레임의 둥근 테두리 카드 */}
-      <div className="w-full max-w-sm rounded-[2rem] border-2 border-neutral-800 px-6 py-10 dark:border-neutral-300">
+      <div className="w-full max-w-sm">
         <ProfileHeader profile={profile} />
-        <section className="mt-8 flex flex-col gap-6" aria-label="링크 목록">
+        <section className="mt-12 flex flex-col gap-5" aria-label="링크 목록">
           {links.map((link) => (
             <LinkCard
               key={link.id}

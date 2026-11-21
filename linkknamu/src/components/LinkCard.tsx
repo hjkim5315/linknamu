@@ -28,10 +28,10 @@ export default function LinkCard({ link, initialCount }: Props) {
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleClick}
-      className="flex items-center justify-between rounded-xl border-2 border-neutral-300 px-5 py-4 transition hover:-translate-y-0.5 hover:border-emerald-500 hover:shadow-md dark:border-neutral-600 dark:hover:border-emerald-400"
+      className="glass flex items-center justify-between rounded-3xl px-6 py-5 transition-colors duration-300 ease-out hover:bg-white/55 dark:hover:bg-white/[0.12]"
     >
-      <span className="font-medium">{link.title}</span>
-      <span className="text-sm text-neutral-500 dark:text-neutral-400">
+      <span className="font-semibold">{link.title}</span>
+      <span className="text-xs font-medium tabular-nums text-[var(--muted)]">
         {count.toLocaleString("ko-KR")}회
       </span>
     </a>
